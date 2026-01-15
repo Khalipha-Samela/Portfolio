@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khalipha Samela – Full-Stack Developer specializing in modern web applications using React, PHP, and MySQL.">
+    <meta name="keywords" content="Full Stack Developer, Web Developer, React, PHP, Portfolio">
+    <meta name="author" content="Khalipha Samela">
+    <title>Contact | Khalipha Samela</title>
+    
+    <!-- Preconnect for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Font Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="background-elements">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="gradient-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Khalipha.</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="skills.html" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="certificates.html" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-title">Get In Touch</h1>
+                <p class="page-subtitle">Let's discuss your project and create something amazing together</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h2>Let's Start a Conversation</h2>
+                        <p>I'm always interested in new opportunities and collaborations. Whether you have a project in mind or just want to say hello, I'd love to hear from you.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">📧</div>
+                                <div class="method-info">
+                                    <h3>Email</h3>
+                                    <p>samelakhalipha@gmail.com</p>
+                                    <span>Typically replies within 24 hours</span>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="method-icon">📱</div>
+                                <div class="method-info">
+                                    <h3>Phone</h3>
+                                    <p>+27 074 916 1348</p>
+                                    <span>Mon-Fri, 9am-6pm</span>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="method-icon">📍</div>
+                                <div class="method-info">
+                                    <h3>Location</h3>
+                                    <p>Johannesburg, South Africa</p>
+                                    <span>Available for remote work worldwide</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-large">
+                            <h3>Follow Me</h3>
+                            <div class="social-grid">
+                                <a href="https://github.com/Khalipha-Samela" class="social-link-large">
+                                    <span class="social-icon">GitHub</span>
+                                    <span class="social-handle">@Khalipha-Samela</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/khalipha-samela" class="social-link-large">
+                                    <span class="social-icon">LinkedIn</span>
+                                    <span class="social-handle">@khalipha-samela</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <div class="form-card">
+                        <h2>Send a Message</h2>
+                        <form class="contact-form" action="https://formspree.io/f/xpqwvryl" method="POST">
+                            <!-- Add a hidden input for your email -->
+                            <input type="hidden" name="_replyto" value="samelakhalipha@gmail.com">
+                            <input type="hidden" name="_subject" value="New Contact Form Submission">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="first-name" name="first-name" required>
+                                    <label for="first-name">First Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="last-name" name="last-name" required>
+                                    <label for="last-name">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Email Address</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required>
+                                <label for="subject">Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="project-type" name="project-type" required>
+                                    <option value=""></option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="full-stack">Full-Stack</option>
+                                    <option value="consultation">Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <label for="project-type">Project Type</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary form-submit">
+                                <span class="btn-text">Send Message</span>
+                                <div class="btn-loader"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-socials">
+            <a href="https://github.com/Khalipha-Samela" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/khalipha-samela" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        
+        <div class="container">
+            <p>&copy; 2026 Khalipha Samela. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/contact.js"></script>
+</body>
+</html>

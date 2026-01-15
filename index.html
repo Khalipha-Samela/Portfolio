@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khalipha Samela – Full-Stack Developer specializing in modern web applications using React, PHP, and MySQL.">
+    <meta name="keywords" content="Full Stack Developer, Web Developer, React, PHP, Portfolio">
+    <meta name="author" content="Khalipha Samela">
+
+    <title>Khalipha Samela | Portfolio</title>
+
+    <!-- Preconnect for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Font Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Background Elements -->
+    <div class="background-elements">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="gradient-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Khalipha.</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="skills.html" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="certificates.html" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Hello, I'm</span>
+                        <span class="title-name">Khalipha Samela</span>
+                    </h1>
+                    <p class="hero-subtitle">Junior Full-Stack Developer | React • PHP • MySQL</p>
+                    <p class="hero-description">Passionate about creating innovative solutions with modern technologies. I transform ideas into reality through code, design, and creativity.</p>
+                    <div class="hero-actions">
+                        <a href="projects.html" class="btn btn-primary">View Projects</a>
+                        <a href="resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Resume</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-card">
+                        <div class="avatar-container">
+                            <div class="avatar"></div>
+                            <div class="avatar-glow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img 
+                            src="/assets/images/profile.jpg" 
+                            alt="Khalipha Samela Profile Picture"
+                            class="profile-image"
+                        />
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>I’m a Systems Development graduate and Junior Full-Stack Developer with a passion for building practical, user-focused web applications. I enjoy turning ideas into clean, responsive, and functional solutions using modern technologies.</p>
+                    <p>I work mainly with HTML, CSS, JavaScript, React, PHP, and MySQL, and I’m always learning, improving my skills, and challenging myself through real-world projects and collaboration.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" id="github-project-count">Loading...</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">GitHub Repositories</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <div class="icon-background"></div>
+                        <span class="icon-text">💻</span>
+                    </div>
+                    <h3 class="skill-title">Frontend Development</h3>
+                    <p class="skill-description">Creating responsive, accessible web interfaces with modern technologies.</p>
+                    <div class="skill-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <div class="icon-background"></div>
+                        <span class="icon-text">⚙️</span>
+                    </div>
+                    <h3 class="skill-title">Backend Development</h3>
+                    <p class="skill-description">Building robust server-side applications and APIs.</p>
+                    <div class="skill-tags">
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Supabase</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <div class="icon-background"></div>
+                        <span class="icon-text">🎨</span>
+                    </div>
+                    <h3 class="skill-title">UI/UX Design</h3>
+                    <p class="skill-description">Designing intuitive user experiences with attention to detail.</p>
+                    <div class="skill-tags">
+                        <span class="tag">Figma</span>
+                        <span class="tag">Prototyping</span>
+                        <span class="tag">User Research</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+                <a href="skills.html" class="btn btn-primary">View All Skills</a>
+            </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-divider"></div>
+            </div>
+        
+            <!-- Auto-generated projects will appear here -->
+            <div class="projects-grid" id="featured-projects"></div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="projects.html" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Have a project in mind?</h2>
+                <p>I'm always interested in new challenges and opportunities to create something amazing.</p>
+                <a href="contact.html" class="btn btn-primary">Let's Work Together</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-socials">
+            <a href="https://github.com/Khalipha-Samela" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/khalipha-samela" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        
+        <div class="container">
+            <p>&copy; 2026 Khalipha Samela. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <!-- Project details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/projects.js"></script>
+    <script src="/assets/js/github-stats.js"></script>
+</body>
+</html>
