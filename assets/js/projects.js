@@ -245,7 +245,7 @@ function getAllProjects() {
                 'Confetti celebration animations'
             ],
             tech: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
-            liveUrl: 'http://quizquest.atwebpages.com/',   
+            liveUrl: 'https://quiz-quest.42web.io/?i=1',   
             githubUrl: 'https://github.com/Khalipha-Samela/Quiz-Quest.git'
         }
     };
