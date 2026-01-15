@@ -5,7 +5,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and certi
 ---
 
 ## 🌐 Live Demo
-[View Live Portfolio](https://your-portfolio-link.com) 
+[View Live Portfolio](https://khalipha-portfolio.vercel.app/) 
 
 ---
 
@@ -24,7 +24,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and certi
 - **Frontend:** HTML5, CSS3, JavaScript (ES6+)
 - **Styling:** Custom CSS with CSS Variables, Flexbox, Grid
 - **Fonts:** Google Fonts (Inter), Font Awesome Icons
-- **Hosting:** Netlify / Vercel *(example)*
+- **Hosting:** Vercel 
 - **Additional:** GitHub API, Formspree (contact form)
 
 ---
