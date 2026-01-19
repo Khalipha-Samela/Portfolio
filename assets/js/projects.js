@@ -99,27 +99,6 @@ function getAllProjects() {
             githubUrl: 'https://github.com/Khalipha-Samela/MindGuard-Journal.git'
         },
 
-        'Kings Escape': {
-            title: 'Kings Escape',
-            category: 'Full Stack',
-            date: '2025',
-            gradient: 'linear-gradient(135deg, #667eea, #764ba2)',
-            thumbnail: 'assets/images/Kings-Escape.png" width="100%"',
-            shortDescription: 'A chess survival puzzle where you guide the king past enemy pieces.',
-            description: 'The King\'s Escape is an interactive chess puzzle where players must navigate the king from (0,0) to (7,7) while enemies spawn after each move.',
-            features: [
-                'Interactive 8×8 chessboard',
-                'Valid move highlighting',
-                'Random enemy generation',
-                'Win/lose detection',
-                'Responsive layout',
-                'AJAX PHP communication'
-            ],
-            tech: ['PHP', 'JavaScript', 'MySQL', 'HTML/CSS'],
-            liveUrl: 'http://kingsescape.atwebpages.com/',
-            githubUrl: 'https://github.com/Khalipha-Samela/Kings-Escape'
-        },
-
         'Travelo': {
             title: 'Travelo',
             category: 'Web Development',
