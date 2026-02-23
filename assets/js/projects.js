@@ -55,7 +55,7 @@ function generateProjectCards() {
 function getAllProjects() {
     return {
         'Kaizen Focus App': {
-            title: 'Kaizen – Focus & Task Management App',
+            title: 'Kaizen',
             category: 'Full Stack',
             date: '2025',
             gradient: 'linear-gradient(135deg, #667eea, #764ba2)',
@@ -226,29 +226,6 @@ function getAllProjects() {
             liveUrl: 'http://maratonmaster.atwebpages.com/',
             githubUrl: 'https://github.com/Khalipha-Samela/Marathon-Tracker.git'
         },
-
-        'Quiz Quest': {
-            title: 'Quiz Quest: The Ultimate Trivia Challenge',
-            category: 'Full Stack',
-            date: '2025',
-            gradient: 'linear-gradient(135deg, #3a7bd5, #00d2ff)',
-            thumbnail: 'assets/images/quizquest-thumbnail.png',
-            shortDescription: 'A full online trivia platform with quizzes, rounds, players, leaderboard, and scoring system.',
-            description: 'Quiz Quest is a full-featured PHP & MySQL trivia game system. It includes quiz creation, rounds management, question assignment, player scoring, leaderboards, and real-time quiz play with UI transitions, timer, and animations.',
-            features: [
-                'Admin quiz creation panel',
-                'Add rounds and questions dynamically',
-                'Player quiz mode with timer',
-                'Real-time scoring system',
-                'Leaderboard with ranking',
-                'Score search and update system',
-                'Mobile-responsive UI',
-                'Confetti celebration animations'
-            ],
-            tech: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
-            liveUrl: 'https://quiz-quest.42web.io/?i=1',   
-            githubUrl: 'https://github.com/Khalipha-Samela/Quiz-Quest.git'
-        }
     };
 }
 
