@@ -54,6 +54,28 @@ function generateProjectCards() {
 ------------------------------------------- */
 function getAllProjects() {
     return {
+        'Kaizen Focus App': {
+            title: 'Kaizen – Focus & Task Management App',
+            category: 'Full Stack',
+            date: '2026',
+            gradient: 'linear-gradient(135deg, #1e3c72, #2a5298)',
+            thumbnail: 'assets/images/kaizen-thumbnail.png', 
+            shortDescription: 'A full-stack productivity app with task workflow management and focus-driven design.',
+            description: 'Kaizen is a full-stack PHP & MySQL productivity application inspired by the Japanese philosophy of continuous improvement. It allows users to manage tasks through structured workflow stages (Todo, In Progress, Done) while maintaining focus and organization. Built with scalable backend architecture and environment-based configuration for production deployment.',
+            features: [
+                'Task creation, editing, and deletion',
+                'Workflow stages (Todo → In Progress → Done)',
+                'Tag system for task organization',
+                'MySQL database integration',
+                'Environment-based configuration (.env)',
+                'Responsive modern UI',
+                'Ready for future Focus Music integration'
+            ],
+            tech: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
+            liveUrl: 'https://kaizen.42web.io/',  
+            githubUrl: 'https://github.com/Khalipha-Samela/Kaizen.git'
+        },
+
         'Deadline Master': {
             title: 'Deadline Master',
             category: 'Web Development',
