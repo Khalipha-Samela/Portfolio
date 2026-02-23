@@ -16,6 +16,80 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        /* Additional styles for certificate images */
+        .certificate-image-container {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 12px 12px 0 0;
+            background: linear-gradient(135deg, #6D9B9B 0%, #8DB4B4 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .certificate-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .certificate-card:hover .certificate-image-container img {
+            transform: scale(1.05);
+        }
+        
+        .certificate-image-container .pdf-icon {
+            font-size: 4rem;
+            color: white;
+            opacity: 0.9;
+        }
+        
+        .certificate-footer-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+        }
+        
+        .certificate-issuer-mini {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .certificate-date-mini {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        
+        .certificate-card {
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        .certificate-content {
+            padding: 1.5rem 1.5rem 1rem;
+        }
+        
+        .certificate-content h3 {
+            margin: 0 0 0.5rem;
+            font-size: 1.25rem;
+        }
+        
+        .certificate-content p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        .certificate-footer {
+            padding: 0 1.5rem 1.5rem;
+        }
+    </style>
 </head>
 <body>
     <!-- Background Elements -->
@@ -84,85 +158,75 @@
             </div>
 
             <div class="certificates-grid">
-                <!-- Full-Stack Development - FNB App Academy -->
-                <div class="certificate-card featured">
-                    <div class="certificate-header">
-                        <div class="certificate-badge">
-                            <i class="fas fa-layer-group"></i>
-                        </div>
-                        <div class="certificate-meta">
-                            <span class="certificate-category">Full-Stack Development</span>
-                            <span class="certificate-date">Issued: 2025</span>
-                        </div>
+                <!-- Prodigy InfoTech Internship Certificate -->
+                <div class="certificate-card">
+                    <div class="certificate-image-container">
+                        <i class="fas fa-layer-group pdf-icon"></i>
                     </div>
                     <div class="certificate-content">
-                        <h3 class="certificate-title">Full-Stack Web Development Program</h3>
-                        <p class="certificate-issuer">FNB App Academy</p>
-                        <p class="certificate-description">Comprehensive training in modern full-stack web development including frontend, backend, databases, and deployment methodologies.</p>
-                        <div class="certificate-skills">
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">PHP</span>
-                            <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">APIs</span>
-                            <span class="skill-tag">Git</span>
-                        </div>
+                        <h3 class="certificate-title">Web Development Internship</h3>
+                        <p class="certificate-issuer">Prodigy InfoTech</p>
+                    </div>
+                    <div class="certificate-footer-info">
+                        <span class="certificate-issuer-mini">PIT/OCT25/01068</span>
+                        <span class="certificate-date-mini">Issued: October 2025</span>
                     </div>
                     <div class="certificate-footer">
-                        <a href="#" class="btn btn-primary btn-small">View Certificate</a>
+                        <a href="assets/images/certificates/prodigy-cert.jpg" class="btn btn-primary btn-small" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+
+                <!-- Full-Stack Development - FNB App Academy -->
+                <div class="certificate-card">
+                    <div class="certificate-image-container">
+                        <i class="fas fa-layer-group pdf-icon"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Full-Stack Web Development</h3>
+                        <p class="certificate-issuer">FNB App Academy</p>
+                    </div>
+                    <div class="certificate-footer-info">
+                        <span class="certificate-issuer-mini">FNB Academy</span>
+                        <span class="certificate-date-mini">Issued: 2025</span>
+                    </div>
+                    <div class="certificate-footer">
+                        <a href="assets/images/certificates/fnb-cert.jpg" class="btn btn-primary btn-small" target="_blank">View Certificate</a>
                     </div>
                 </div>
 
                 <!-- JavaScript (Basic) - HackerRank -->
                 <div class="certificate-card">
-                    <div class="certificate-header">
-                        <div class="certificate-badge">
-                            <i class="fab fa-js"></i>
-                        </div>
-                        <div class="certificate-meta">
-                            <span class="certificate-category">Programming</span>
-                            <span class="certificate-date">Issued: 2025</span>
-                        </div>
+                    <div class="certificate-image-container">
+                        <i class="fab fa-js pdf-icon"></i>
                     </div>
                     <div class="certificate-content">
-                        <h3 class="certificate-title">JavaScript (Basic) Certification</h3>
+                        <h3 class="certificate-title">JavaScript (Basic)</h3>
                         <p class="certificate-issuer">HackerRank</p>
-                        <p class="certificate-description">Validated proficiency in fundamental JavaScript concepts including variables, data types, functions, arrays, and basic algorithms.</p>
-                        <div class="certificate-skills">
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">ES6</span>
-                            <span class="skill-tag">Algorithms</span>
-                            <span class="skill-tag">Problem Solving</span>
-                        </div>
+                    </div>
+                    <div class="certificate-footer-info">
+                        <span class="certificate-issuer-mini">HackerRank</span>
+                        <span class="certificate-date-mini">Issued: 2025</span>
                     </div>
                     <div class="certificate-footer">
-                        <a href="https://www.hackerrank.com/certificates/iframe/7c14ba30cc50" class="btn btn-primary btn-small">View Certificate</a>
+                        <a href="https://www.hackerrank.com/certificates/iframe/7c14ba30cc50" class="btn btn-primary btn-small" target="_blank">View Certificate</a>
                     </div>
                 </div>
 
                 <!-- SQL (Basic) - HackerRank -->
                 <div class="certificate-card">
-                    <div class="certificate-header">
-                        <div class="certificate-badge">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <div class="certificate-meta">
-                            <span class="certificate-category">Database</span>
-                            <span class="certificate-date">Issued: 2025</span>
-                        </div>
+                    <div class="certificate-image-container">
+                        <i class="fas fa-database pdf-icon"></i>
                     </div>
                     <div class="certificate-content">
-                        <h3 class="certificate-title">SQL (Basic) Certification</h3>
+                        <h3 class="certificate-title">SQL (Basic)</h3>
                         <p class="certificate-issuer">HackerRank</p>
-                        <p class="certificate-description">Demonstrated knowledge of SQL fundamentals including queries, joins, aggregations, and database manipulation operations.</p>
-                        <div class="certificate-skills">
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">Database</span>
-                            <span class="skill-tag">Queries</span>
-                            <span class="skill-tag">MySQL</span>
-                        </div>
+                    </div>
+                    <div class="certificate-footer-info">
+                        <span class="certificate-issuer-mini">HackerRank</span>
+                        <span class="certificate-date-mini">Issued: 2025</span>
                     </div>
                     <div class="certificate-footer">
-                        <a href="https://www.hackerrank.com/certificates/iframe/2d6d549e4d9b" class="btn btn-primary btn-small">View Certificate</a>
+                        <a href="https://www.hackerrank.com/certificates/iframe/2d6d549e4d9b" class="btn btn-primary btn-small" target="_blank">View Certificate</a>
                     </div>
                 </div>
             </div>
@@ -242,84 +306,6 @@
                             <span class="validation-skill">Responsive Design</span>
                             <span class="validation-level certified">Advanced</span>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Ongoing Learning -->
-    <section class="ongoing-learning">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Currently Learning</h2>
-                <div class="section-divider"></div>
-                <p class="section-description">Continuing professional development through ongoing courses and skill enhancement.</p>
-            </div>
-
-            <div class="learning-cards">
-                <div class="learning-card">
-                    <div class="learning-icon">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <h3>Advanced React</h3>
-                    <p>React Hooks, Context API, Performance</p>
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 75%">
-                            <span class="progress-text">75% Complete</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="learning-card">
-                    <div class="learning-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3>Node.js Backend</h3>
-                    <p>Express, MongoDB, Authentication</p>
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 50%">
-                            <span class="progress-text">50% Complete</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="learning-card">
-                    <div class="learning-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Web Security</h3>
-                    <p>OWASP Principles, HTTPS, Authentication</p>
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 40%">
-                            <span class="progress-text">40% Complete</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Learning Philosophy -->
-    <section class="learning-philosophy">
-        <div class="container">
-            <div class="philosophy-content">
-                <h2>My Learning Philosophy</h2>
-                <div class="philosophy-grid">
-                    <div class="philosophy-item">
-                        <div class="philosophy-icon">🎯</div>
-                        <h3>Continuous Improvement</h3>
-                        <p>I believe in constantly upgrading skills through certifications, courses, and hands-on projects to stay current with industry trends.</p>
-                    </div>
-                    <div class="philosophy-item">
-                        <div class="philosophy-icon">📚</div>
-                        <h3>Practical Application</h3>
-                        <p>Every certification is followed by practical implementation in real projects to reinforce learning and demonstrate capability.</p>
-                    </div>
-                    <div class="philosophy-item">
-                        <div class="philosophy-icon">🚀</div>
-                        <h3>Future-Focused</h3>
-                        <p>Targeting emerging technologies and methodologies to prepare for the future of web development and software engineering.</p>
                     </div>
                 </div>
             </div>
