@@ -1,14 +1,3 @@
-/* =========================================
-   COMPLETE PORTFOLIO REDESIGN 2026
-   New Color Palette
-   BG: #FAF8F3 (Sand Light)
-   Sand: #EEE9DD
-   Ocean Dark: #172830
-   Teal: #2A7F8A
-   Teal Light: #5DB8C4
-   Sunset: #D4883A
-========================================= */
-
 /* ----- CSS Reset ----- */
 *,
 *::before,
@@ -20,13 +9,12 @@
 
 /* ----- Design Variables ----- */
 :root {
-    /* New Color Palette */
-    --sand-light: #FAF8F3;      /* Main background - warm sand */
-    --sand: #EEE9DD;             /* Secondary background - deeper sand */
-    --ocean-dark: #172830;       /* Dark text, accents - deep ocean */
-    --teal: #2A7F8A;             /* Primary accent - rich teal */
-    --teal-light: #5DB8C4;       /* Light teal for highlights */
-    --sunset: #D4883A;           /* Warm accent - sunset orange */
+    --sand-light: #FAF8F3;      
+    --sand: #EEE9DD;             
+    --ocean-dark: #172830;      
+    --teal: #2A7F8A;             
+    --teal-light: #5DB8C4;       
+    --sunset: #D4883A;          
     
     /* Extended Palette */
     --ocean-dark-light: #1e3640;
@@ -1811,6 +1799,10 @@ section {
     
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-modern {
+        padding: var(--space-xl) 0;
     }
     
     .footer-grid {
