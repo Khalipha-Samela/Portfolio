@@ -3,62 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Khalipha Samela – Full-Stack Developer specializing in modern web applications using React, PHP, and MySQL.">
-    <meta name="keywords" content="Full Stack Developer, Web Developer, React, PHP, Portfolio">
-    <meta name="author" content="Khalipha Samela">
-
-    <title>Khalipha Samela | Portfolio</title>
-
-    <!-- Preconnect for fonts -->
+    <meta name="description" content="Khalipha Samela - Full-Stack Developer crafting thoughtful digital experiences">
+    <title>Khalipha Samela · Full-Stack Developer</title>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Font Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <canvas id="particle-canvas"></canvas>
-
-    <!-- Background Elements -->
-    <div class="background-elements">
-        <div class="floating-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-        </div>
-        <div class="gradient-overlay"></div>
-    </div>
-
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="index.html">Khalipha.</a>
+                <a href="/">Khalipha.</a>
             </div>
+            
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="skills.html" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="projects.html" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="certificates.html" class="nav-link">Certifications</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            
             <div class="theme-toggle">
-                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
-                    <span class="theme-icon">🌙</span>
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
                 </button>
             </div>
+            
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -68,41 +49,66 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
+    <section id="home" class="hero">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
+            <div class="hero-grid">
+                <div class="hero-content fade-in-up">
+                    <span class="hero-badge">✦ Open to opportunities</span>
                     <h1 class="hero-title">
-                        <span class="title-line">Hello, I'm</span>
-                        <span class="title-name">Khalipha Samela</span>
+                        Crafting digital<br>
+                        <span class="gradient-text">experiences</span> with purpose
                     </h1>
-                    <p class="hero-subtitle">Junior Full-Stack Developer | React • PHP • MySQL</p>
-                    <p class="hero-description">Passionate about creating innovative solutions with modern technologies. I transform ideas into reality through code, design, and creativity.</p>
+                    <p class="hero-description">
+                        I'm Khalipha Samela, a Full-Stack Developer who believes in building 
+                        thoughtful, human-centered applications that make a difference.
+                    </p>
+                    
                     <div class="hero-actions">
-                        <a href="projects.html" class="btn btn-primary">View Projects</a>
-                        <a href="/assets/docs/cv-khalipha.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Resume</a>
+                        <a href="#projects" class="btn btn-primary btn-large">
+                            View Work <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="assets/docs/cv-khalipha.pdf" class="btn btn-secondary btn-large" download>
+                            <i class="fas fa-download" aria-hidden="true"></i> Resume
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="2">0+</span>
+                                <span class="stat-label">Years building</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="5">0</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="4">0</span>
+                                <span class="stat-label">Certifications</span>
+                            </div>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="image-card">
-                        <div class="avatar-container">
-                            <div class="avatar">
-                                <img 
-                                    src="/assets/images/avatar.jpeg" 
-                                    alt="Khalipha Samela Avatar"
-                                    class="avatar-image"
-                                    width="300"
-                                    height="300"
-                                />
+                
+                <div class="hero-visual fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="window-dot cream"></span>
+                                <span class="window-dot terra"></span>
+                                <span class="window-dot pine"></span>
                             </div>
-                            <div class="avatar-glow">
-                            </div>
+                            <span class="window-title">developer.js</span>
+                        </div>
+                        <div class="window-content">
+                            <pre class="code-line"><span class="keyword">const</span> <span class="property">developer</span> = {</pre>
+                            <pre class="code-line">  name: <span class="string">'Khalipha Samela'</span>,</pre>
+                            <pre class="code-line">  role: <span class="string">'Full-Stack Developer'</span>,</pre>
+                            <pre class="code-line">  approach: <span class="string">'Thoughtful & intentional'</span>,</pre>
+                            <pre class="code-line">  tools: [<span class="string">'React'</span>, <span class="string">'PHP'</span>, <span class="string">'MySQL'</span>],</pre>
+                            <pre class="code-line">  mission: <span class="string">'Build with purpose'</span></pre>
+                            <pre class="code-line">};</pre>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="scroll-indicator">
-                <div class="scroll-arrow"></div>
             </div>
         </div>
     </section>
@@ -111,35 +117,83 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <div class="section-divider"></div>
+                <h2 class="section-title gradient-text">About Me</h2>
+                <p class="section-subtitle">The person behind the pixels</p>
             </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <div class="image-frame">
-                        <img 
-                            src="/assets/images/profile.jpg" 
-                            alt="Khalipha Samela Profile Picture"
-                            class="profile-image"
-                        />
+            
+            <div class="about-grid">
+                <div class="about-card fade-in-up">
+                    <div class="about-text">
+                        <p>I'm a Systems Development graduate with a deep appreciation for 
+                        thoughtful design and clean code. My journey into development started 
+                        from a simple curiosity: how do the digital tools we use every day 
+                        actually work?</p>
+                        
+                        <p>That curiosity evolved into a passion for creating applications 
+                        that don't just function—they resonate. I believe technology should 
+                        feel natural, intuitive, and human.</p>
+                        
+                        <p>Today, I work primarily with React, PHP, and MySQL, always 
+                        striving to find the balance between technical excellence and 
+                        meaningful user experiences.</p>
+                    </div>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🌱</span>
+                            <div class="highlight-content">
+                                <h4>Continuous Growth</h4>
+                                <p>Always learning, always evolving</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🎯</span>
+                            <div class="highlight-content">
+                                <h4>Purpose-Driven</h4>
+                                <p>Code with intention</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🤝</span>
+                            <div class="highlight-content">
+                                <h4>Collaborative</h4>
+                                <p>Better together</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <span class="highlight-icon">✨</span>
+                            <div class="highlight-content">
+                                <h4>Detail-Oriented</h4>
+                                <p>Every pixel matters</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="about-text">
-                    <p>I’m a Systems Development graduate and Junior Full-Stack Developer with a passion for building practical, user-focused web applications. I enjoy turning ideas into clean, responsive, and functional solutions using modern technologies.</p>
-                    <p>I work mainly with HTML, CSS, JavaScript, React, PHP, and MySQL, and I’m always learning, improving my skills, and challenging myself through real-world projects and collaboration.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number" id="github-project-count">Loading...</span>
-                            <span class="stat-label">Projects Completed</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">2+</span>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">20+</span>
-                            <span class="stat-label">GitHub Repositories</span>
-                        </div>
+                
+                <div class="about-card fade-in-up" style="animation-delay: 0.1s;">
+                    <h3 style="margin-bottom: var(--space-lg); font-family: var(--font-serif);">Currently</h3>
+                    
+                    <div style="margin-bottom: var(--space-lg);">
+                        <h4 style="margin-bottom: var(--space-xs); color: var(--warm-terra);">📍 Based in</h4>
+                        <p style="color: var(--text-secondary); font-size: 1.1rem;">Johannesburg, South Africa</p>
+                    </div>
+                    
+                    <div style="margin-bottom: var(--space-lg);">
+                        <h4 style="margin-bottom: var(--space-xs); color: var(--warm-terra);">🎓 Education</h4>
+                        <p style="color: var(--text-secondary); font-size: 1.1rem;">Diploma in Systems Development</p>
+                    </div>
+                    
+                    <div style="margin-bottom: var(--space-lg);">
+                        <h4 style="margin-bottom: var(--space-xs); color: var(--warm-terra);">💼 Experience</h4>
+                        <p style="color: var(--text-secondary); font-size: 1.1rem;">Web Development Intern @ Prodigy InfoTech</p>
+                    </div>
+                    
+                    <div>
+                        <h4 style="margin-bottom: var(--space-xs); color: var(--warm-terra);">🌍 Open to</h4>
+                        <p style="color: var(--text-secondary); font-size: 1.1rem;">Remote opportunities worldwide</p>
                     </div>
                 </div>
             </div>
@@ -150,114 +204,345 @@
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Skills & Expertise</h2>
-                <div class="section-divider"></div>
+                <h2 class="section-title gradient-text">Skills & Craft</h2>
+                <p class="section-subtitle">Tools I use to bring ideas to life</p>
             </div>
+            
             <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <div class="icon-background"></div>
-                        <span class="icon-text">💻</span>
-                    </div>
-                    <h3 class="skill-title">Frontend Development</h3>
-                    <p class="skill-description">Creating responsive, accessible web interfaces with modern technologies.</p>
-                    <div class="skill-tags">
-                        <span class="tag">HTML5</span>
-                        <span class="tag">CSS3</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">React</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <div class="icon-background"></div>
-                        <span class="icon-text">⚙️</span>
-                    </div>
-                    <h3 class="skill-title">Backend Development</h3>
-                    <p class="skill-description">Building robust server-side applications and APIs.</p>
-                    <div class="skill-tags">
-                        <span class="tag">PHP</span>
-                        <span class="tag">MySQL</span>
-                        <span class="tag">Supabase</span>
+                <!-- Frontend -->
+                <div class="skill-card-modern fade-in-up">
+                    <div class="skill-icon-large">⚛️</div>
+                    <h3>Frontend</h3>
+                    <p>Creating interfaces that feel intuitive and alive</p>
+                    <div class="skill-tags-modern">
+                        <span class="skill-tag-modern">HTML5</span>
+                        <span class="skill-tag-modern">CSS3</span>
+                        <span class="skill-tag-modern">JavaScript</span>
+                        <span class="skill-tag-modern">React</span>
+                        <span class="skill-tag-modern">Tailwind</span>
                     </div>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <div class="icon-background"></div>
-                        <span class="icon-text">🎨</span>
+                
+                <!-- Backend -->
+                <div class="skill-card-modern fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="skill-icon-large">🔧</div>
+                    <h3>Backend</h3>
+                    <p>Building the invisible that makes things work</p>
+                    <div class="skill-tags-modern">
+                        <span class="skill-tag-modern">PHP</span>
+                        <span class="skill-tag-modern">MySQL</span>
+                        <span class="skill-tag-modern">Java</span>
+                        <span class="skill-tag-modern">REST APIs</span>
+                        <span class="skill-tag-modern">Supabase</span>
                     </div>
-                    <h3 class="skill-title">UI/UX Design</h3>
-                    <p class="skill-description">Designing intuitive user experiences with attention to detail.</p>
-                    <div class="skill-tags">
-                        <span class="tag">Figma</span>
-                        <span class="tag">Prototyping</span>
-                        <span class="tag">User Research</span>
+                </div>
+                
+                <!-- Tools -->
+                <div class="skill-card-modern fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="skill-icon-large">🛠️</div>
+                    <h3>Tools</h3>
+                    <p>The craftsman's workshop</p>
+                    <div class="skill-tags-modern">
+                        <span class="skill-tag-modern">Git</span>
+                        <span class="skill-tag-modern">GitHub</span>
+                        <span class="skill-tag-modern">VS Code</span>
+                        <span class="skill-tag-modern">Figma</span>
+                        <span class="skill-tag-modern">Netlify</span>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div style="text-align: center; margin-top: 40px;">
-                <a href="skills.html" class="btn btn-primary">View All Skills</a>
-            </div>
     </section>
+
+    <!-- Education & Certificates Section -->
+        <section id="education" class="education-section" aria-labelledby="education-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="education-title" class="section-title gradient-text">Education & Certificates</h2>
+                    <p class="section-subtitle">Academic background and professional certifications</p>
+                </div>
+            
+                <div class="education-content">
+                    <!-- Diploma in Systems Development -->
+                    <div class="education-block">
+                        <h3 class="education-heading">Diploma in Systems Development</h3>
+                        <p class="education-meta">Boston City Campus · 2023-2025</p>
+                        <ul class="education-details">
+                            <li>Distinction in Systems Development</li>
+                            <li>Distinction in Android Development</li>
+                            <li>Java, SQL, Android, Ethical Hacking & Cyber Law</li>
+                        </ul>
+                        <p class="education-date">Expected Graduation: Nov 2025</p>
+                    </div>
+                
+                    <!-- Spacing between education items -->
+                    <div style="height: 2rem;"></div>
+                
+                    <!-- Higher National Diploma -->
+                    <div class="education-block">
+                        <h3 class="education-heading">National Senior Certificate</h3>
+                        <p class="education-meta">National School of Arts · 2018-2021</p>
+                        <p class="education-date">Graduated: Dec 2021</p>
+                    </div>
+                
+                    <!-- Divider -->
+                    <hr class="education-divider">
+                
+                    <!-- Certifications -->
+                    <h3 class="certifications-heading">Certifications & Achievements</h3>
+                
+                    <div class="certifications-grid">
+                        <ul class="certifications-list">
+                            <!-- Completed certifications -->
+                            <li class="cert-item completed">
+                                <span class="cert-checkbox completed" aria-hidden="true">✓</span>
+                                <a href="assets/images/certificates/fnb-cert.pdf" target="_blank" class="cert-link" rel="noopener noreferrer">Certificate in Full-Stack Development</a>
+                                <span class="cert-date">2025</span>
+                            </li>
+                            <li class="cert-item completed">
+                                <span class="cert-checkbox completed" aria-hidden="true">✓</span>
+                                <a href="https://www.hackerrank.com/certificates/iframe/7c14ba30cc50" target="_blank" class="cert-link" rel="noopener noreferrer">HackerRank - JavaScript (Basic)</a>
+                                <span class="cert-date">2025</span>
+                            </li>     
+                            <li class="cert-item completed">
+                                <span class="cert-checkbox completed" aria-hidden="true">✓</span>
+                                <a href="https://www.hackerrank.com/certificates/iframe/2d6d549e4d9b" target="_blank" class="cert-link" rel="noopener noreferrer">HackerRank - SQL (Basic)</a>
+                                <span class="cert-date">2025</span>
+                            </li> 
+                            <li class="cert-item completed">
+                                <span class="cert-checkbox completed" aria-hidden="true">✓</span>
+                                <a href="assets/images/certificates/prodigy-cert.pdf" target="_blank" class="cert-link" rel="noopener noreferrer">Prodigy InfoTech Internship</a>
+                                <span class="cert-date">2025</span>
+                            </li> 
+                        </ul>
+                    
+                        <ul class="certifications-list">
+                            <!-- In-progress certifications -->
+                            <li class="cert-item in-progress">
+                                <span class="cert-checkbox" aria-hidden="true">○</span>
+                                Google IT Support Certificate
+                                <span class="cert-progress">Planned 2026</span>
+                            </li>
+                            <li class="cert-item in-progress">
+                                <span class="cert-checkbox" aria-hidden="true">◔</span>
+                                AWS Cloud Practitioner
+                                <span class="cert-progress">45% complete</span>
+                            </li>
+                            <li class="cert-item planned">
+                                <span class="cert-checkbox" aria-hidden="true">○</span>
+                                Oracle Certified Java Programmer
+                                <span class="cert-progress">Planned 2026</span>
+                            </li>
+                            <li class="cert-item planned">
+                                <span class="cert-checkbox" aria-hidden="true">○</span>
+                                Microsoft Azure Fundamentals
+                                <span class="cert-progress">Planned 2026</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="section-divider"></div>
+                <h2 class="section-title gradient-text">Featured Projects</h2>
+                <p class="section-subtitle">Recent work I'm proud of</p>
             </div>
-        
-            <!-- Auto-generated projects will appear here -->
-            <div class="projects-grid" id="featured-projects"></div>
+            
+            <!-- Filter Buttons -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="full stack">Full Stack</button>
+                <button class="filter-btn" data-filter="react">React</button>
+                <button class="filter-btn" data-filter="web development">Web Development</button>
+            </div>
+            
+            <!-- Project Cards Container - Will be populated by JavaScript -->
+            <div id="featured-projects" class="projects-grid">
+                <!-- Projects will be loaded dynamically from projects.js -->
+            </div>
 
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="projects.html" class="btn btn-primary">View All Projects</a>
+            <!-- Load More Container - Will be populated by JavaScript -->
+            <div id="projects-footer" class="projects-footer">
+                <!-- Dynamic content will go here -->
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
         <div class="container">
-            <div class="cta-content">
-                <h2>Have a project in mind?</h2>
-                <p>I'm always interested in new challenges and opportunities to create something amazing.</p>
-                <a href="contact.html" class="btn btn-primary">Let's Work Together</a>
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Let's Connect</h2>
+                <p class="section-subtitle">Have a project in mind? I'd love to hear about it</p>
+            </div>
+            
+            <div class="contact-grid-modern">
+                <div class="contact-card-modern fade-in-up">
+                    <h3 style="margin-bottom: var(--space-lg); font-family: var(--font-serif);">Get in touch</h3>
+                    
+                    <div class="contact-methods-modern">
+                        <div class="contact-method-modern">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-method-info">
+                                <h4>Email</h4>
+                                <p>samelakhalipha@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method-modern">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-method-info">
+                                <h4>Phone</h4>
+                                <p>+27 74 916 1348</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method-modern">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-method-info">
+                                <h4>Location</h4>
+                                <p>Johannesburg, South Africa</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links-modern">
+                        <a href="https://github.com/Khalipha-Samela" class="social-link-modern" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/khalipha-samela" class="social-link-modern" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-card-modern fade-in-up" style="animation-delay: 0.1s;">
+                    <h3 style="margin-bottom: var(--space-lg); font-family: var(--font-serif);">Send a message</h3>
+                    
+                    <form class="contact-form-modern" id="contact-form">
+                        <!-- Add these hidden fields -->
+                        <input type="hidden" name="contact_number" id="contact_number">
+                        <input type="hidden" name="date" id="form_date">
+
+                        <div class="form-group-modern">
+                            <label for="name">
+                                Name <span class="required">*</span>
+                            </label>
+                            <input type="text" id="name" name="name" required 
+                                    minlength="2" maxlength="50"
+                                    placeholder="John Doe">
+                            <small class="error-message" id="name-error"></small>
+                        </div>
+    
+                        <div class="form-group-modern">
+                            <label for="email">
+                                Email <span class="required">*</span>
+                            </label>
+                            <input type="email" id="email" name="email" required 
+                                placeholder="john@example.com">
+                            <small class="error-message" id="email-error"></small>
+                        </div>
+    
+                        <div class="form-group-modern">
+                            <label for="subject">
+                                Subject
+                            </label>
+                            <input type="text" id="subject" name="subject" 
+                                    placeholder="What's this about?">
+                        </div>
+    
+                        <div class="form-group-modern">
+                            <label for="message">
+                                Message <span class="required">*</span>
+                            </label>
+                            <textarea id="message" name="message" rows="5" required 
+                                    minlength="10" maxlength="1000"
+                                    placeholder="Your message here..."></textarea>
+                            <small class="char-counter">
+                                <span id="char-count">0</span>/1000
+                            </small>
+                            <small class="error-message" id="message-error"></small>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" id="submit-btn" style="width: 100%;">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                        <div class="form-status success-message" id="form-success" style="display: none;">
+                            <i class="fas fa-check-circle"></i>
+                            Message sent successfully! I'll get back to you soon.
+                        </div>
+
+                        <div class="form-status error-message" id="form-error" style="display: none;">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            Failed to send message. Please try again or email me directly.
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-socials">
-            <a href="https://github.com/Khalipha-Samela" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/khalipha-samela" aria-label="LinkedIn">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-        </div>
-        
+    <footer class="footer-modern">
         <div class="container">
-            <p>&copy; 2026 Khalipha Samela. All rights reserved.</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Khalipha Samela</h3>
+                    <p>Building with purpose</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#education">Education</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://github.com/Khalipha-Samela" class="social-link-modern" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/khalipha-samela" class="social-link-modern" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: var(--space-xl); color: var(--text-tertiary); font-size: 0.875rem;">
+                <p>© 2026 Khalipha Samela — Crafted with intention</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Project Modal -->
-    <div id="project-modal" class="modal">
-        <div class="modal-content">
+    <!-- Modal for project details -->
+    <div id="project-modal" class="modern-modal">
+        <div class="modern-modal-content">
             <span class="modal-close">&times;</span>
-            <div class="modal-body">
-                <!-- Project details will be loaded here -->
+            <div class="modal-body" id="modal-body">
+                <!-- Content loaded dynamically from projects.js -->
             </div>
         </div>
     </div>
 
-    <script src="/assets/js/script.js"></script>
-    <script src="/assets/js/projects.js"></script>
-    <script src="/assets/js/github-stats.js"></script>
+    <script src="assets/js/config.js"></script>
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/projects.js"></script>
 </body>
 </html>

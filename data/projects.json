@@ -1,0 +1,106 @@
+[
+  {
+    "title": "MealPlanner Pro",
+    "category": "Full Stack",
+    "date": "2026",
+    "gradient": "linear-gradient(135deg, #667eea, #764ba2)",
+    "thumbnail": "assets/images/mealplanner-thumbnail.png",
+    "shortDescription": "A smart meal planning and kitchen management web application.",
+    "description": "MealPlanner Pro helps users organize recipes, track ingredients, plan weekly meals, and generate grocery lists automatically.",
+    "features": [
+      "Recipe management",
+      "Weekly meal planner",
+      "Automatic grocery lists",
+      "Kitchen inventory tracking",
+      "Barcode scanning",
+      "Voice grocery input"
+    ],
+    "tech": ["PHP", "PostgreSQL", "JavaScript", "HTML", "CSS"],
+    "liveUrl": "https://mealplanner-pro.onrender.com/",
+    "githubUrl": "https://github.com/Khalipha-Samela/MealPlanner-Pro"
+  },
+  {
+    "title": "Kaizen",
+    "category": "Full Stack",
+    "date": "2026",
+    "gradient": "linear-gradient(135deg, #667eea, #764ba2)",
+    "thumbnail": "assets/images/kaizen-thumbnail.png",
+    "shortDescription": "A productivity app inspired by continuous improvement.",
+    "description": "Kaizen is a full-stack PHP & MySQL productivity application inspired by the Japanese philosophy of continuous improvement. It allows users to manage tasks through structured workflow stages (Todo, In Progress, Done) while maintaining focus and organization. Built with scalable backend architecture and environment-based configuration for production deployment.",
+    "features": [
+      "Task workflow management",
+      "Tag organization",
+      "Responsive UI",
+      "MySQL database integration"
+    ],
+    "tech": ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
+    "liveUrl": "https://kaizen.42web.io/",
+    "githubUrl": "https://github.com/Khalipha-Samela/Kaizen"
+  },
+  {
+    "title": "Deadline Master",
+    "category": "React",
+    "date": "2025",
+    "gradient": "linear-gradient(135deg, #667eea, #764ba2)",
+    "thumbnail": "assets/images/deadline-master-thumbnail.png",
+    "shortDescription": "A modern productivity app for tracking assignments and deadlines.",
+    "description": "Deadline Master is a modern, React-based productivity application designed to help students and early-career professionals track assignments, manage priorities, and meet deadlines using real-time countdowns and a clean, responsive UI.",
+    "features": [
+      "Live countdown timer with days, hours, minutes, seconds",
+      "Priority levels (High, Medium, Low)",
+      "Mark assignments as complete",
+      "Edit and delete assignments",
+      "Persistent storage using localStorage",
+      "Visual deadline alerts (urgent, warning, overdue)",
+      "Glassmorphism UI with smooth animations"
+    ],
+    "tech": ["React", "JavaScript (ES6+)", "Tailwind CSS", "Lucide React Icons", "LocalStorage API"],
+    "liveUrl": "https://deadline-master.netlify.app/", 
+    "githubUrl": "https://github.com/Khalipha-Samela/Deadline-Master.git"
+  },
+  {
+    "title": "MindGuard Journal",
+    "category": "Full Stack",
+    "date": "2025",
+    "gradient": "linear-gradient(135deg, #667eea, #764ba2)",
+    "thumbnail": "assets/images/mindguard-thumbnail.png",
+    "shortDescription": "AI-powered trauma insight journal with secure authentication and emotional pattern analysis.",
+    "description": "MindGuard Journal is a privacy-focused, AI-assisted journaling web application designed to help users reflect on their thoughts, understand emotional patterns, identify potential trauma triggers, and receive grounding techniques and coping strategies. Features secure Supabase authentication, user-specific data handling with Row Level Security, and a custom JavaScript analysis engine.",
+    "features": [
+        "Secure user authentication with Supabase Auth",
+        "AI-powered emotional pattern analysis (5 dimensions)",
+        "Trauma trigger detection with intensity levels",
+        "Personalized grounding techniques & coping strategies",
+        "Dashboard with visual risk indicators",
+        "Journal history with expandable entries",
+        "Privacy-first design with user-scoped data",
+        "Fully responsive modern UI/UX"
+    ],
+    "tech": ["HTML5", "CSS3", "JavaScript", "Supabase", "PostgreSQL", "REST API"],
+    "liveUrl": "https://mindguard-journal.netlify.app/login.html",
+    "githubUrl": "https://github.com/Khalipha-Samela/MindGuard-Journal.git"
+  },
+  {
+    "title": "Travelo",
+    "category": "Web Development",
+    "date": "2025",
+    "gradient": "linear-gradient(135deg, #667eea, #764ba2)",
+    "thumbnail": "assets/images/travelo-thumbnail.png",
+    "shortDescription": "A responsive travel landing page with interactive navigation and theme toggle.",
+    "description": "Travelo is a responsive travel landing page created as Task 01 of the Web Development Internship at Prodigy InfoTech. It features an interactive navigation menu that changes style on scroll and hover, a fixed header, smooth scroll effects, and a theme toggle for light/dark mode. The page includes hero section, destinations gallery, testimonials, and a booking form.",
+    "features": [
+      "Fully responsive design for all devices",
+      "Interactive navigation menu with scroll/hover effects",
+      "Fixed header visible on all pages",
+      "Smooth scroll effects",
+      "Hero section with call-to-action buttons",
+      "Destinations and gallery sections",
+      "Testimonials section for social proof",
+      "Booking form for travel inquiries",
+      "Light/dark theme toggle"
+    ],
+    "tech": ["HTML5", "CSS3", "JavaScript (ES6)"],
+    "liveUrl": "https://travelo-omega.vercel.app/",
+    "githubUrl": "https://github.com/Khalipha-Samela/PRODIGY_WD_01.git"
+  }
+]
