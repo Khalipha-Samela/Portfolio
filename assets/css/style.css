@@ -1883,6 +1883,7 @@ section {
     
     .projects-grid {
         grid-template-columns: 1fr;
+        gap: var(--space-xl);
     }
     
     .hero-stats {
@@ -1907,7 +1908,6 @@ section {
         padding: var(--space-lg);
     }
 
-    /* FIX: notifications slide in from right but stay within screen width */
     .notification {
         min-width: unset;
         width: 100%;
@@ -1923,7 +1923,6 @@ section {
         width: 100%;
     }
     
-    /* FIX: contact methods stay horizontal, only text wraps */
     .contact-method-modern {
         align-items: flex-start;
     }
@@ -1946,7 +1945,6 @@ section {
         height: 200px;
     }
     
-    /* FIX: hero stats stay in a 2-column wrap instead of switching layout mid-breakpoint */
     .hero-stats {
         flex-direction: row;
         flex-wrap: wrap;
@@ -1957,12 +1955,10 @@ section {
         flex: 1 1 40%;
     }
 
-    /* FIX: education card padding reduced so content isn't cramped */
     .education-content {
         padding: var(--space-md);
     }
 
-    /* FIX: reduce section padding on very small screens */
     section {
         padding: var(--space-2xl) 0;
     }
