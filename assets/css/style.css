@@ -453,6 +453,7 @@ section {
     display: flex;
     gap: var(--space-xl);
     margin-top: var(--space-lg);
+    flex-wrap: wrap; /* FIX: prevents overflow on mid-size phones */
 }
 
 .stat-item {
@@ -1116,9 +1117,11 @@ section {
 }
 
 /* Projects Grid */
+/* FIX: changed minmax(350px, 1fr) → minmax(min(350px, 100%), 1fr)
+   so cards never force horizontal overflow on narrow screens */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
     gap: var(--space-lg);
 }
 
@@ -1299,6 +1302,7 @@ section {
 .contact-method-icon {
     width: 48px;
     height: 48px;
+    flex-shrink: 0; /* FIX: prevents icon squishing in flex row on small screens */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1317,6 +1321,7 @@ section {
 .contact-method-info p {
     color: var(--text-tertiary);
     font-size: 0.95rem;
+    word-break: break-word; /* FIX: prevents long email/URL overflow */
 }
 
 .contact-method-info small {
@@ -1361,6 +1366,7 @@ section {
 .social-links-modern {
     display: flex;
     gap: var(--space-sm);
+    flex-wrap: wrap; /* FIX: social icons wrap instead of overflow */
 }
 
 .social-link-modern {
@@ -1516,6 +1522,7 @@ section {
     display: flex;
     justify-content: center;
     gap: var(--space-lg);
+    flex-wrap: wrap; /* FIX: footer links wrap on small screens */
 }
 
 .footer-links a {
@@ -1552,6 +1559,7 @@ section {
     display: flex;
     justify-content: flex-end;
     gap: var(--space-sm);
+    flex-wrap: wrap; /* FIX: social icons wrap instead of overflow */
 }
 
 .footer-bottom {
@@ -1589,6 +1597,7 @@ section {
     opacity: 0;
     visibility: hidden;
     transition: all var(--transition);
+    padding: var(--space-md); /* FIX: prevents modal touching screen edges on mobile */
 }
 
 .modern-modal.active {
@@ -1600,7 +1609,7 @@ section {
     background: var(--bg-primary);
     border-radius: var(--border-radius-lg);
     max-width: 800px;
-    width: 90%;
+    width: 100%; /* FIX: was 90%, now 100% so padding on .modern-modal controls inset */
     max-height: 90vh;
     overflow-y: auto;
     position: relative;
@@ -1731,6 +1740,7 @@ section {
     top: 100px;
     right: 20px;
     z-index: 9999;
+    max-width: calc(100vw - 40px); /* FIX: notifications can't exceed screen width */
 }
 
 .notification {
@@ -1799,10 +1809,6 @@ section {
     
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .footer-modern {
-        padding: var(--space-xl) 0;
     }
     
     .footer-grid {
@@ -1900,9 +1906,11 @@ section {
     .modal-body {
         padding: var(--space-lg);
     }
-    
+
+    /* FIX: notifications slide in from right but stay within screen width */
     .notification {
-        min-width: 250px;
+        min-width: unset;
+        width: 100%;
     }
 }
 
@@ -1915,9 +1923,9 @@ section {
         width: 100%;
     }
     
+    /* FIX: contact methods stay horizontal, only text wraps */
     .contact-method-modern {
-        flex-direction: column;
-        text-align: center;
+        align-items: flex-start;
     }
     
     .project-filters {
@@ -1938,90 +1946,24 @@ section {
         height: 200px;
     }
     
+    /* FIX: hero stats stay in a 2-column wrap instead of switching layout mid-breakpoint */
     .hero-stats {
         flex-direction: row;
         flex-wrap: wrap;
+        gap: var(--space-md);
     }
     
     .stat-item {
         flex: 1 1 40%;
     }
-}
 
-/* Load More Styles */
-.projects-footer {
-    text-align: center;
-    margin-top: var(--space-xl);
-}
-
-.load-more-container {
-    text-align: center;
-}
-
-.load-more-btn {
-    min-width: 220px;
-    transition: all var(--transition);
-}
-
-.load-more-btn i {
-    transition: transform var(--transition-fast);
-}
-
-.load-more-btn:hover i {
-    transform: translateY(4px);
-}
-
-.load-more-btn.loading {
-    pointer-events: none;
-    opacity: 0.7;
-}
-
-.projects-count {
-    color: var(--text-tertiary);
-    font-size: 0.95rem;
-    margin-top: var(--space-sm);
-}
-
-.projects-count span {
-    color: var(--teal);
-    font-weight: 500;
-}
-
-/* Loading spinner animation */
-@keyframes spin {
-    to { transform: rotate(360deg); }
-}
-
-.fa-spinner {
-    animation: spin 1s linear infinite;
-}
-
-/* New project cards animation */
-.project-card.new-card {
-    animation: slideIn 0.5s ease forwards;
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
+    /* FIX: education card padding reduced so content isn't cramped */
+    .education-content {
+        padding: var(--space-md);
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    /* FIX: reduce section padding on very small screens */
+    section {
+        padding: var(--space-2xl) 0;
     }
-}
-
-/* No more projects indicator */
-.no-more-projects {
-    color: var(--text-tertiary);
-    font-size: 0.95rem;
-    padding: var(--space-md);
-    border-top: 1px solid var(--border);
-    display: inline-block;
-}
-
-.no-more-projects i {
-    color: var(--teal);
-    margin-right: 0.5rem;
 }
