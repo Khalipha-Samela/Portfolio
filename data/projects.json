@@ -1,5 +1,29 @@
 [
   {
+    "title": "TrackMyJobs",
+    "category": "Full Stack",
+    "featured": true,
+    "date": "2026",
+    "gradient": "linear-gradient(135deg, #FF6B6B, #4ECDC4)",
+    "thumbnail": "assets/images/trackmyjobs-thumbnail.png",
+    "shortDescription": "A modern job application tracking system with CV management and real-time analytics.",
+    "description": "TrackMyJobs is a comprehensive job application tracker that helps users manage their job search journey. Built with React on the frontend and Node.js/Express on the backend, with Supabase for database and storage. Features include secure authentication, CV upload/download with original filename preservation, real-time dashboard statistics, full CRUD operations, and a modern neo-brutalist design. Deployed on Netlify (frontend) and Render (backend).",
+    "features": [
+      "Secure JWT authentication with email/password",
+      "CV/Resume upload and download with original filename preservation",
+      "Real-time dashboard statistics showing application status breakdown",
+      "Full CRUD operations for job applications",
+      "Search and filter functionality by company/position and status",
+      "Responsive neo-brutalist design with modern card layout",
+      "Pagination for efficient navigation through applications",
+      "File validation (PDF, DOC, DOCX, max 5MB)",
+      "Deployed on Netlify and Render with Supabase backend"
+    ],
+    "tech": ["React", "Node.js", "Express", "Supabase", "PostgreSQL", "JWT", "CSS3", "Netlify", "Render"],
+    "liveUrl": "https://track-myjobs.netlify.app",
+    "githubUrl": "https://github.com/Khalipha-Samela/TrackMyJobs"
+  },
+  {
     "title": "MealPlanner Pro",
     "category": "Full Stack",
     "date": "2026",
