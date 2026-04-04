@@ -1,7 +1,7 @@
 [
   {
     "title": "FileFlow",
-    "category": "Desktop App",
+    "category": "desktop",
     "featured": true,
     "date": "2026",
     "gradient": "linear-gradient(135deg, #234645, #85AC8D)",
@@ -23,7 +23,7 @@
   },
   {
     "title": "TrackMyJobs",
-    "category": "Full Stack",
+    "category": "full stack",
     "featured": true,
     "date": "2026",
     "gradient": "linear-gradient(135deg, #FF6B6B, #4ECDC4)",
@@ -47,7 +47,7 @@
   },
   {
     "title": "MealPlanner Pro",
-    "category": "Full Stack",
+    "category": "full stack",
     "date": "2026",
     "gradient": "linear-gradient(135deg, #667eea, #764ba2)",
     "thumbnail": "assets/images/mealplanner-thumbnail.png",
@@ -67,7 +67,7 @@
   },
   {
     "title": "Kaizen",
-    "category": "Full Stack",
+    "category": "full stack",
     "date": "2026",
     "gradient": "linear-gradient(135deg, #667eea, #764ba2)",
     "thumbnail": "assets/images/kaizen-thumbnail.png",
@@ -85,7 +85,7 @@
   },
   {
     "title": "Deadline Master",
-    "category": "React",
+    "category": "frontend",
     "date": "2025",
     "gradient": "linear-gradient(135deg, #667eea, #764ba2)",
     "thumbnail": "assets/images/deadline-master-thumbnail.png",
@@ -106,7 +106,7 @@
   },
   {
     "title": "MindGuard Journal",
-    "category": "Full Stack",
+    "category": "web apps",
     "date": "2025",
     "gradient": "linear-gradient(135deg, #667eea, #764ba2)",
     "thumbnail": "assets/images/mindguard-thumbnail.png",
@@ -128,7 +128,7 @@
   },
   {
     "title": "Travelo",
-    "category": "Web Development",
+    "category": "web apps",
     "date": "2025",
     "gradient": "linear-gradient(135deg, #667eea, #764ba2)",
     "thumbnail": "assets/images/travelo-thumbnail.png",
