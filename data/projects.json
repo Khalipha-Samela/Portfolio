@@ -1,5 +1,27 @@
 [
   {
+    "title": "FileFlow",
+    "category": "Desktop App",
+    "featured": true,
+    "date": "2026",
+    "gradient": "linear-gradient(135deg, #234645, #85AC8D)",
+    "thumbnail": "assets/images/fileflow-thumbnail.png",
+    "shortDescription": "A smart desktop file organizer with a modern UI that automatically sorts files into categories.",
+    "description": "FileFlow is a Python desktop application designed to solve the common problem of messy folders. Built with CustomTkinter, it features a modern SaaS-style interface, automatic file categorization based on extensions, real-time statistics, history logging, and customizable settings. It demonstrates strong understanding of file systems, UI/UX design, and building practical tools for everyday use.",
+    "features": [
+      "One-click automatic file organization",
+      "Custom category management via UI",
+      "Real-time stats dashboard",
+      "File movement history tracking",
+      "Remembers last selected folder",
+      "Modern CustomTkinter UI",
+      "Duplicate file handling with auto-renaming"
+    ],
+    "tech": ["Python", "CustomTkinter", "Tkinter", "JSON", "OS", "Shutil"],
+    "liveUrl": "",
+    "githubUrl": "https://github.com/Khalipha-Samela/FileFlow"
+  },
+  {
     "title": "TrackMyJobs",
     "category": "Full Stack",
     "featured": true,
