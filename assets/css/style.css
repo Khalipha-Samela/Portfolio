@@ -450,8 +450,8 @@ section {
 }
 
 .hero-stats {
-    display: flex;
-    gap: var(--space-xl);
+    display: block;
+    gap: var(--space-md);
     margin-top: var(--space-lg);
 }
 
@@ -1383,6 +1383,16 @@ section {
     color: white;
     transform: translateY(-2px);
     border-color: var(--teal);
+}
+
+.contact-link {
+    color: var(--text-tertiary);
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: var(--teal);
 }
 
 /* ----- Form Styles ----- */
