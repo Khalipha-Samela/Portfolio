@@ -546,15 +546,6 @@ function initFormHandling() {
 
                 //Reset character count
                 if (charCount) charCount.textContent = '0';
-
-                //Remove error states
-                form.querySelectorAll('.error').forEach(el => el.classList.remove('error'));
-
-                // Hide error messages
-                form.querySelectorAll('[id$="-error"]').forEach(el => {
-                    el.style.display = 'none';
-                    el.textContent = '';
-                });
                 
                 // Generate new contact number for next message
                 if (contactNumber) {
