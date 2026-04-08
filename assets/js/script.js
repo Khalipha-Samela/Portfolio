@@ -502,6 +502,8 @@ function initFormHandling() {
                 });
             }
 
+            const now = new Date();
+            
             // Match your template variables exactly
             const templateParams = {
                 name: nameInput.value.trim(),
@@ -523,8 +525,6 @@ function initFormHandling() {
 
                 contact_number: contactNumber ? contactNumber.value : Date.now()
             };
-
-            console.log('Sending email with params:', templateParams); // For debugging
 
             // Send email using EmailJS with config values
             const response = await emailjs.send(
