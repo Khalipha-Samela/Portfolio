@@ -504,21 +504,24 @@ function initFormHandling() {
 
             // Match your template variables exactly
             const templateParams = {
-                name: nameInput.value.trim(),           // {{name}} in template
-                time: formDate ? formDate.value : new Date().toLocaleString('en-US', {
+                name: nameInput.value.trim(),
+                email: emailInput.value.trim(),
+                subject: subjectInput ? subjectInput.value.trim() || 'New Message from Portfolio' : 'New Message from Portfolio',
+                message: messageInput.value.trim(),
+
+                date: now.toLocaleDateString('en-US', {
                     month: 'short',
                     day: 'numeric',
-                    year: 'numeric',
+                    year: 'numeric'
+                }),
+
+                time: now.toLocaleTimeString('en-US', {
                     hour: 'numeric',
                     minute: '2-digit',
                     hour12: true
-                }),                                      // {{time}} in template
-                message: messageInput.value.trim(),      // {{message}} in template
-                
-                // Additional fields for your reference (not in template but useful)
-                email: emailInput.value.trim(),          // Sender's email for reply
-                subject: subjectInput ? subjectInput.value.trim() || 'New Message from Portfolio' : 'New Message from Portfolio',
-                contact_number: contactNumber ? contactNumber.value : Math.random().toString(36).substring(2, 10)
+                }),
+
+                contact_number: contactNumber ? contactNumber.value : Date.now()
             };
 
             console.log('Sending email with params:', templateParams); // For debugging
